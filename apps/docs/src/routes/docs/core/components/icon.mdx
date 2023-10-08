@@ -1,3 +1,39 @@
-import { Preview } from "../../../../components";
+import { Preview, TabsSnippets } from "../../../../components";
+import { WithBasicUsage } from "../../../../examples/icon";
+import { Alert } from "@kobalte/pigment";
 
 # Icon
+
+Visual element that renders icons from [Iconify](https://iconify.design/).
+
+## Import
+
+```tsx
+import { Icon } from "@kobalte/pigment";
+```
+
+## Basic Usage 
+
+<Preview>
+  <WithBasicUsage />
+</Preview>
+
+```tsx
+<Icon name="i-tabler-sun" />
+```
+
+The name of the icon follows the pattern `i-{collection_name}-{icon_name}`.
+
+<Alert class="[&>p]:!m-0">
+  Pigment's preset for TailwindCSS includes 
+  [egoist/tailwindcss-icons](https://github.com/egoist/tailwindcss-icons).
+  There, you can find instructios on how to install icon collections.
+</Alert>
+
+## API Reference
+
+### Props
+
+| Prop | Description                                                                   |
+| :--- | :---------------------------------------------------------------------------- |
+| name | The name of the icon following the pattern `i-{collection_name}-{icon_name}`. |
